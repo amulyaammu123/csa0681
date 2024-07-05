@@ -1,0 +1,16 @@
+def find_max_min_sorted(arr):
+    if not arr:
+        return None, None
+    
+    min_val = arr[0]
+    max_val = arr[-1]
+    
+    return max_val, min_val
+
+# Example usage:
+if __name__ == "__main__":
+    array = [2, 4, 6, 8, 10, 12, 14, 18]
+    max_value, min_value = find_max_min_sorted(array)
+    print("Array:", array)
+    print("Maximum value:", max_value)
+    print("Minimum value:", min_value)
