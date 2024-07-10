@@ -1,0 +1,9 @@
+def first_palindromic_string(words):
+     def is_palindrome(word):
+        return word == word[::-1]
+     for word in words:
+        if is_palindrome(word):
+            return word
+     return ""
+words =  ["abc","car","ada","racecar","cool"]
+print(first_palindromic_string(words))   
